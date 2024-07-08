@@ -1,0 +1,57 @@
+# Aplicación de Gestión de Tópicos
+
+Esta aplicación proporciona un API REST para gestionar tópicos relacionados con cursos y usuarios.
+
+## Funcionalidades
+
+La aplicación soporta las siguientes operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para los tópicos:
+
+1. **Registrar un Tópico**
+   - Método: `POST`
+   - Endpoint: `/topicos`
+   - Descripción: Crea un nuevo tópico con los datos proporcionados.
+
+2. **Listar Tópicos Activos**
+   - Método: `GET`
+   - Endpoint: `/topicos`
+   - Descripción: Obtiene una lista de todos los tópicos activos disponibles.
+
+3. **Obtener Detalles de un Tópico**
+   - Método: `GET`
+   - Endpoint: `/topicos/{id}`
+   - Descripción: Obtiene los detalles de un tópico específico por su ID.
+
+4. **Actualizar un Tópico**
+   - Método: `PUT`
+   - Endpoint: `/topicos`
+   - Descripción: Actualiza los detalles de un tópico existente.
+
+5. **Eliminar un Tópico**
+   - Método: `DELETE`
+   - Endpoint: `/topicos/{id}`
+   - Descripción: Elimina un tópico específico por su ID.
+
+6. **Desactivar un Tópico**
+   - Método: `DELETE`
+   - Endpoint: `/topicos/desactivar-{id}`
+   - Descripción: Cambia el estado de un tópico a inactivo.
+
+## Requisitos
+
+- Java 11 o superior
+- Maven para la gestión de dependencias
+- MySQL u otro sistema de gestión de bases de datos compatible
+
+## Configuración
+
+1. Clona el repositorio desde GitHub.
+2. Configura las propiedades de la base de datos en `application.properties`.
+3. Ejecuta la aplicación usando Maven: `mvn spring-boot:run`.
+
+## Seguridad
+
+La aplicación utiliza seguridad básica mediante tokens JWT (JSON Web Token) para autenticación. Los endpoints están protegidos y requieren un token válido en el encabezado `Authorization` para ser accesibles.
+
+## Contacto
+
+Para cualquier consulta, puedes contactar a [tu correo electrónico] o visitar [tu sitio web].
